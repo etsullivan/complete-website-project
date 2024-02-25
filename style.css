@@ -2,6 +2,7 @@ body {
     display: flex;
     flex-direction: column;
     flex: auto;
+    margin: 0;
 }
 
 .header {
@@ -16,19 +17,23 @@ body {
     background-color: #1F2937;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    padding:30px 300px
+    justify-content: space-around;
+    padding:30px 300px;
+    flex: auto;
+    flex-shrink: 0;
+    gap: 30px;
 }
 
 .logo {
     flex-shrink: 0;
+    width: 75px;
 }
 
 
 .toplinks {
     display: flex;
     justify-content: space-between;
-    gap:30px
+    gap: 30px
 }
 
 .topleft,
@@ -36,8 +41,11 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: left;
     color: #E5E7EB;
+}
+
+.ascent {
+    border-radius: 5px;
 }
 
 h1 {
@@ -74,15 +82,39 @@ h2 {
 
 .middle {
     display: flex;
-    justify-content: center;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
     padding: 30px 300px;
+}
+
+.mates {
+    width: 75px;
+    height: 75px;
+    border: 2px solid #3882F6;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
 }
 
 .names {
     display: flex;
     flex-direction: row;
+    gap: 50px;
+    text-align: center;
+    color: #1F2937;
+    font-size: 10px;
+}
+
+.dough,
+.crispy,
+.gato,
+.postum,
+.ogearty {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-content: space-around;
 }
 
 .bottom {
